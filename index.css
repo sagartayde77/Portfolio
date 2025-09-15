@@ -3,11 +3,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
 }
 
 /* Font Setup */
 body {
-  font-family: 'Roboto', sans-serif;
   background: linear-gradient(90deg, #23bbcc, #57c785, #eddc53);
   color: #fff;
   min-height: 100vh;
@@ -110,4 +110,20 @@ h1, h2, h3, #logo {
   left: 230px;
   rotate: 90deg;
   z-index: -100;
+}
+
+#about{
+  border-radius: 10px;
+  position: absolute;
+  left: 40%;
+  top: 40%;
+  font-weight: bolder;
+  font-size: larger;
+  display: inline-flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  max-height: 100vh;
+  max-width: fit-content;
 }
