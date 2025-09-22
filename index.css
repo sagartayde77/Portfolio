@@ -6,30 +6,38 @@
   font-family: 'Roboto', sans-serif;
 }
 
-/* Font Setup */
+/* Smooth Scroll */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Body */
 body {
   background: linear-gradient(90deg, #23bbcc, #57c785, #eddc53);
   color: #fff;
   min-height: 100vh;
 }
 
-/* Headings use Montserrat for professional look */
+/* Headings */
 h1, h2, h3, #logo {
   font-family: 'Montserrat', sans-serif;
 }
 
 /* Navbar */
+#header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
 #navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0.6rem 2rem;
-  background: rgba(0, 0, 0, 0.6);   
+  background: rgba(0, 0, 0, 0.6);
   backdrop-filter: blur(10px);
   color: #fff;
-  position: sticky;
-  top: 0;
-  z-index: 100;
 }
 
 #nav-btn {
@@ -58,7 +66,14 @@ h1, h2, h3, #logo {
 }
 
 #nav-btn li:hover a {
-  color: #23bbcc; /* Subtle hover highlight */
+  color: #23bbcc;
+}
+
+/* First Page */
+#first_page {
+  width: 100%;
+  height: 100vh;
+  position: relative;
 }
 
 /* Hero Circle */
@@ -72,13 +87,12 @@ h1, h2, h3, #logo {
   left: 100px;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.4);
   overflow: hidden;
-
 }
 
-#photo img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+#photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 /* Decorative Lines */
@@ -112,11 +126,11 @@ h1, h2, h3, #logo {
   z-index: -100;
 }
 
-#about{
+#info {
   border-radius: 10px;
   position: absolute;
   left: 40%;
-  top: 40%;
+  top: 45%;
   font-weight: bolder;
   font-size: larger;
   display: inline-flex;
@@ -126,4 +140,32 @@ h1, h2, h3, #logo {
   align-items: center;
   max-height: 100vh;
   max-width: fit-content;
+}
+
+/* Second Page */
+#second_page {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 4rem 2rem;
+}
+
+#about {
+  max-width: 900px;
+  text-align: center;
+}
+
+#Head_about {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+  letter-spacing: 2px;
+}
+
+#about_desc {
+  font-size: 1.1rem;
+  line-height: 1.8;
 }
