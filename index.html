@@ -3,59 +3,200 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
-  <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
-  <!-- CSS -->
-  <link rel="stylesheet" href="index.css">
+  <title>Sagar Tayde | Cloud & DevOps Engineer</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Header / Navbar -->
-  <header id="header">
-    <nav id="navbar" role="navigation" aria-label="Main Navigation">
-      <div id="logo"><h2>Portfolio</h2></div>
-      <ul id="nav-btn">
-        <li><a href="#first_page">Home</a></li>
-        <li><a href="#second_page">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<div class="progress-bar"></div>
 
-  <!-- First Page -->
-  <section id="first_page">
-    <main>
-      <div id="photo">
-        <img src="https://i.pinimg.com/originals/9f/c2/12/9fc2126eec2c0a3876e3f2097af9b983.gif" alt="Profile GIF">
+<header>
+  <nav class="navbar">
+    <div class="logo-container">
+      <div class="cloud-icon"></div>
+      <div class="cloud-particles"></div>
+      <h2 class="logo">Sagar Tayde</h2>
+      <div class="cloud-badge">Cloud</div>
+    </div>
+
+    <div class="hamburger" id="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="nav-link">Home</a></li>
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#architecture" class="nav-link">Architecture</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<section id="home" class="hero">
+  <div class="particles"></div>
+
+  <div class="hero-content" data-aos="fade-up">
+    <h1>Hi, I'm Sagar Tayde</h1>
+    <h2 class="role">Cloud & DevOps Engineer</h2>
+    <p>
+      I design secure, scalable and cost-optimized AWS infrastructures
+      using Terraform, Linux and automation best practices.
+    </p>
+
+    <div class="hero-buttons">
+      <a href="#projects" class="btn">View Projects</a>
+      <a href="https://drive.google.com/your-resume-link" class="btn outline-btn" target="_blank">Download Resume</a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container" data-aos="fade-right">
+    <h2>Professional Summary</h2>
+    <p>
+      Cloud & DevOps enthusiast with strong hands-on experience designing
+      production-style AWS infrastructures. Focused on Infrastructure as Code,
+      security-first architecture, networking fundamentals, and automation.
+    </p>
+  </div>
+</section>
+
+<section id="skills" class="section">
+  <div class="container">
+    <h2 data-aos="fade-up">Technical Expertise</h2>
+
+    <div class="skills-grid">
+      <div class="skill-card" data-aos="zoom-in">
+        <h3>Cloud & Infrastructure</h3>
+        <p>AWS (VPC, EC2, ALB, RDS, S3, IAM)</p>
       </div>
-      <div id="one" class="lines"></div>
-      <div id="two" class="lines"></div>
-      <div id="three" class="lines"></div>
 
-      <!-- Info Section -->
-      <section id="info">
-        <h1>Hi, I'm <span>Sagar Tayde.</span></h1>
-        <p>Cloud & DevOps professional | AWS Cloud Services | Terraform | Git/GitHub</p>
-      </section>
-    </main>
-  </section>
+      <div class="skill-card" data-aos="zoom-in">
+        <h3>Infrastructure as Code</h3>
+        <p>Terraform (Modules, Remote State)</p>
+      </div>
 
-  <!-- Second Page / About -->
-  <section id="second_page">
-    <section id="about">
-      <h1 id="Head_about">ABOUT</h1>
-      <p id="about_desc">
-        I am a passionate Cloud & DevOps professional with hands-on experience in AWS Cloud Services,
-        Infrastructure as Code using Terraform, and version control with Git/GitHub. I enjoy building scalable,
-        secure, and efficient cloud solutions while continuously learning new technologies. I thrive on solving
-        challenges, automating processes, and collaborating to deliver high-quality results. My goal is to grow
-        as a cloud expert and contribute to innovative projects that make a real impact.
-      </p>
-    </section>
-  </section>
+      <div class="skill-card" data-aos="zoom-in">
+        <h3>Systems</h3>
+        <p>Linux (User Mgmt, SSH, Permissions)</p>
+      </div>
+
+      <div class="skill-card" data-aos="zoom-in">
+        <h3>Containers & CI/CD</h3>
+        <p>Docker, GitHub Actions</p>
+      </div>
+
+      <div class="skill-card" data-aos="zoom-in">
+        <h3>Version Control</h3>
+        <p>Git & GitHub</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="container">
+    <h2 data-aos="fade-up">Projects</h2>
+
+    <div class="projects-grid">
+      <div class="project-card" data-aos="fade-up">
+        <h3>AWS 3-Tier Architecture</h3>
+        <p>Secure 3-tier architecture using VPC, ALB and RDS.</p>
+      </div>
+
+      <div class="project-card" data-aos="fade-up">
+        <h3>Terraform Automation</h3>
+        <p>Modular Terraform provisioning with remote state.</p>
+      </div>
+
+      <div class="project-card" data-aos="fade-up">
+        <h3>AWS Secure Infra</h3>
+        <p>Secure VPC with Bastion & WireGuard VPN.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="architecture" class="section">
+  <div class="container" data-aos="fade-up">
+    <h2>Architecture Snapshot</h2>
+    <div class="architecture-image">
+      <img src="architecture.png" alt="AWS Architecture Diagram">
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container" data-aos="fade-up">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:s.b.tayde777@gmail.com">s.b.tayde777@gmail.com</a></p>
+    <p>GitHub: <a href="https://github.com/sagartayde77" target="_blank">github.com/sagartayde77</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/sagartayde777" target="_blank">linkedin.com/in/sagartayde777</a></p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Sagar Tayde | Cloud & DevOps Engineer
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+AOS.init({ duration: 1000, once: true });
+
+window.addEventListener("scroll", function () {
+  document.querySelector(".navbar")
+    .classList.toggle("scrolled", window.scrollY > 50);
+
+  const progressBar = document.querySelector(".progress-bar");
+  const scrollTop = window.scrollY;
+  const docHeight = document.body.scrollHeight - window.innerHeight;
+  progressBar.style.width = (scrollTop / docHeight) * 100 + "%";
+});
+
+const hamburger = document.getElementById("hamburger");
+const navLinks = document.getElementById("nav-links");
+
+hamburger.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+  hamburger.classList.toggle("active");
+});
+
+const sections = document.querySelectorAll("section");
+const navItems = document.querySelectorAll(".nav-link");
+
+window.addEventListener("scroll", () => {
+  let current = "";
+  sections.forEach(section => {
+    if (scrollY >= section.offsetTop - 120) {
+      current = section.id;
+    }
+  });
+
+  navItems.forEach(link => {
+    link.classList.remove("active");
+    if (link.getAttribute("href") === "#" + current) {
+      link.classList.add("active");
+    }
+  });
+});
+
+const particlesContainer = document.querySelector(".particles");
+for (let i = 0; i < 40; i++) {
+  const span = document.createElement("span");
+  span.style.left = Math.random() * 100 + "%";
+  span.style.animationDuration = (10 + Math.random() * 10) + "s";
+  span.style.animationDelay = Math.random() * 5 + "s";
+  particlesContainer.appendChild(span);
+}
+</script>
 
 </body>
 </html>
